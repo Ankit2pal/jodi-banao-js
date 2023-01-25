@@ -1,0 +1,13 @@
+@import '../../styles/variables/colors';
+
+.dialog-title {
+  background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+}
+
+.dialog-content-root {
+  padding: 20px 24px;
+}
+
+.dialog-actions-root {
+  margin-top: 10px;
+}

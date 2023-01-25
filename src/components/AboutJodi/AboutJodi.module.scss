@@ -1,0 +1,97 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.about_jodi_container {
+  padding: 80px 8%;
+
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .match_text {
+      font-size: 24px;
+      color: $grey3;
+    }
+
+    .jodi_text {
+      margin-top: 10px;
+      margin-bottom: 100px;
+      font-size: 300%;
+      font-weight: 500;
+      color: $yellow4;
+    }
+  }
+
+  .box_containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    .box_n_desc:nth-of-type(2) > .box > .box_img {
+      transform: rotateY(180deg);
+    }
+
+    .box_n_desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        display: flex;
+        justify-content: center;
+        background-color: $grey3;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px $partialblack2;
+        transition: all 0.25s ease-out;
+
+        .box_img {
+          fill: $white;
+          width: 40%;
+          transition: all 0.25s ease-out;
+        }
+      }
+
+      .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .desc_title {
+          color: $grey4;
+          font-weight: 500;
+          margin-bottom: 10px;
+          width: 150%;
+          cursor: default;
+          transition: all 0.25s ease-out;
+        }
+
+        > p {
+          margin: 0;
+          font-size: 125%;
+          color: $grey3;
+        }
+      }
+    }
+  }
+}
+
+.box:hover {
+  background-color: $orange !important;
+  transition: all 0.25s ease-in;
+}
+
+.box:hover > .box_img {
+  width: 50% !important;
+  transition: all 0.25s ease-in;
+}
+
+.box:hover + .desc > .desc_title {
+  color: $orange !important;
+  transition: all 0.25s ease-in;
+}

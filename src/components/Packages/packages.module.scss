@@ -1,0 +1,72 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.tab {
+  margin-bottom: 10%;
+  text-align: center;
+  color: $black;
+  background-color: $white2;
+  font-family: 'Poppins';
+
+  &.active {
+    background-color: $red1;
+    color: $white !important;
+  }
+}
+
+.mainpanel {
+  display: flex;
+  flex-grow: 8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  padding-top: 0 !important;
+  min-height: 80vh;
+}
+
+.left_tabs {
+  flex-grow: 2;
+}
+
+.left_tabs div div {
+  margin-top: 50%;
+
+  @include smBreakPoint {
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  @include lgBreakPoint {
+    margin-left: 50%;
+  }
+}
+
+.button {
+  margin-left: 22%;
+  background-color: $red5;
+  &:hover {
+    background-color: $red5;
+  }
+}
+
+.profile {
+  min-width: 30px;
+  color: $black;
+}
+
+.list {
+  width: 100%;
+  max-width: 360;
+  margin-top: 15px;
+}
+
+.card {
+  border: 1px solid $red1;
+  height: 23rem;
+  margin-left: 20px;
+}
+.carousel_wrapper {
+  margin-top: 25px;
+}

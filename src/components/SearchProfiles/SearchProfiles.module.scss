@@ -1,0 +1,53 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.searchbar_container {
+  margin-bottom: 0%;
+}
+
+.box_container {
+  padding-top: 50px;
+  background: url(../../images/Bg_pattern.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 67vh;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.box_container_pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.box_container_pagination > nav,
+.pagination_container {
+  width: 100%;
+}
+
+.pagination_container {
+  ul {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2.5%;
+  }
+
+  li:first-child,
+  li:last-child {
+    button {
+      background-color: $red1;
+      opacity: 1;
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.no_record {
+  margin: auto;
+  font-size: 40px;
+}

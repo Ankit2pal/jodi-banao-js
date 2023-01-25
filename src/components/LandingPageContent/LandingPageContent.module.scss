@@ -1,0 +1,140 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box_container {
+  width: 100%;
+}
+
+.register-box {
+  display: flex;
+  background: $red1;
+  margin-top: 0%;
+
+  @include xxsBreakPoint {
+    background: url(../../images/landing-page-background.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  .description_box {
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 50px 0px 25px 0px;
+      text-align: center;
+
+      @include lgBreakPoint {
+        padding: 100px 0px 10px 70px;
+      }
+
+      .title {
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: $yellow;
+        padding-bottom: 5%;
+        font-size: 2em;
+
+        @include smBreakPoint {
+          padding-bottom: 2%;
+        }
+
+        @include lgBreakPoint {
+          font-size: 2.5em;
+        }
+
+        @include xlBreakPoint {
+          padding-bottom: 0%;
+        }
+      }
+
+      .sub-title {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        @include mdBreakPoint {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .form_container {
+    box-sizing: border-box;
+    background: $white;
+    border-radius: 30px;
+
+    @include smBreakPoint {
+      margin-bottom: 5%;
+    }
+
+    @include lgBreakPoint {
+      margin: 10px 20px 30px 40px;
+      background: $partialwhite;
+    }
+  }
+}
+
+.description_box,
+.form_container {
+  flex-basis: 100%;
+  max-width: 100%;
+
+  @include smBreakPoint {
+    margin-left: 5%;
+    flex-basis: 90%;
+  }
+
+  @include lgBreakPoint {
+    margin-left: 0%;
+    flex-basis: 80%;
+  }
+
+  @include xlBreakPoint {
+    flex-basis: 60%;
+  }
+}
+
+.form_container > form > div > div:first-child {
+  display: grid;
+
+  @include xlBreakPoint {
+    display: flex;
+  }
+}
+
+.form_container > form > div > div > div:first-child {
+  flex-basis: 100%;
+
+  @include xlBreakPoint {
+    flex-basis: 40%;
+  }
+}
+
+.form_container > form > div > div > div:nth-of-type(2) {
+  flex-basis: 100%;
+  justify-content: flex-start;
+
+  @include lgBreakPoint {
+    padding-top: 12px;
+  }
+
+  @include xlBreakPoint {
+    flex-basis: 40%;
+    justify-content: flex-end;
+    padding-top: 0%;
+  }
+}
+
+.error {
+  display: flex;
+  font-weight: bold;
+  color: $red6;
+  flex-flow: row nowrap;
+  justify-content: center;
+}

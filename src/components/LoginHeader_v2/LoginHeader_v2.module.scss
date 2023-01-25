@@ -1,0 +1,76 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  height: 50px;
+  margin-top: 37px;
+  padding: 0% 8%;
+  width: 100%;
+
+  .logo_container {
+    height: 50px;
+
+    .box_logo {
+      .logo {
+        height: 80%;
+        max-height: 50px;
+      }
+    }
+  }
+
+  .login_container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: $grey3;
+
+    & > svg {
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+
+      @include mdBreakPoint {
+        display: none;
+      }
+    }
+
+    .login_button {
+      display: none;
+      background-color: $partialwhite3;
+      min-width: 150px;
+      color: $grey3;
+      border-radius: 5px;
+
+      @include mdBreakPoint {
+        display: block;
+      }
+    }
+
+    .help_container {
+      .help_link {
+        display: none;
+        cursor: pointer;
+
+        @include mdBreakPoint {
+          display: block;
+        }
+      }
+
+      & > svg {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+
+        @include mdBreakPoint {
+          display: none;
+        }
+      }
+    }
+  }
+}

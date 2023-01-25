@@ -1,0 +1,20 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.banner {
+  cursor: default;
+  text-align: center;
+  background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+  color: $white;
+  overflow: auto;
+}
+
+.banner + * {
+  padding-top: 50px;
+  background: url(../../images/Bg_pattern.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  min-height: 100%;
+}

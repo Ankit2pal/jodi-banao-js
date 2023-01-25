@@ -1,0 +1,43 @@
+@import './variables/screensizes';
+
+@mixin xxsBreakPoint {
+  @media (min-width: #{$xxs}) {
+    @content;
+  }
+}
+
+@mixin xsBreakPoint {
+  @media (min-width: #{$xs}) {
+    @content;
+  }
+}
+
+@mixin smBreakPoint {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin mdBreakPoint {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin lgBreakPoint {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin xlBreakPoint {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@mixin xxlBreakPoint {
+  @media (min-width: #{$xxl}) {
+    @content;
+  }
+}

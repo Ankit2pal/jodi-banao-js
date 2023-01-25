@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.container {
+  padding-bottom: 10%;
+  display: block;
+  @include xsBreakPoint {
+    padding-bottom: 5%;
+  }
+}

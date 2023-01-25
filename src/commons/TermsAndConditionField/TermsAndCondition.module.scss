@@ -1,0 +1,17 @@
+@import '../../styles/variables/colors';
+
+.terms_conditions {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $blue;
+}
+
+.terms_and_conditions_error {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $red4;
+}

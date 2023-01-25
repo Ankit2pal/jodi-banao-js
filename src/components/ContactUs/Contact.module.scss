@@ -1,0 +1,162 @@
+  @import '../../styles/variables/colors';
+
+  .box-container_map1{
+    display: flex;
+  }
+  .box-container_map {
+    margin: 65px 40px;
+    width: 50%;
+    background: $white;
+    border: 4px solid #f14046;
+    box-shadow: 0px 7px 6px -1px $partialblack;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    float: left;
+  }
+
+  .box-container {
+    margin: 60px;
+    width: 50%;
+    background: $white;
+    border: 0.5px solid $grey;
+    box-shadow: 0px 7px 6px -1px $partialblack;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    float: left;
+    
+
+    .get {
+      cursor: default;
+      text-align: center;
+      background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+      color: $white;
+      overflow: auto;
+    }
+    .box-form-container1 {
+      display: flex;
+      justify-content: space-around;
+    }
+    .box-form-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 15px;
+      
+
+      .new-password,
+      .confirm-password {
+        width: 100%;
+        font-size: large;
+        margin-right: 2%;
+
+      
+      }
+      .confirm-password input{
+        height: 100%;
+        width: 100%;
+        margin-right: 4%;
+
+      }
+      // 
+
+    }
+
+    .button_forgotpwd {
+      height: 56px;
+      background-color: $red1;
+      width: 100%;
+
+      &:hover {
+        background-color: $red1;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .about_jodi_container {
+    padding: 0px 8%;
+
+    .text_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .match_text {
+        font-size: 24px;
+        color: $grey3;
+        margin-bottom: 10px;
+      }
+
+      .jodi_text {
+        // margin-top: 10px;
+        // margin-bottom: 100px;
+        font-size: 300%;
+        font-weight: 500;
+        color: $yellow4;
+      }
+    }
+
+    .box_containers {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+
+      .box_n_desc:nth-of-type(2) > .box > .box_img {
+        transform: rotateY(180deg);
+      }
+
+      .box_n_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .box {
+          display: flex;
+          justify-content: center;
+          background-color: $grey3;
+          height: 150px;
+          width: 150px;
+          border-radius: 5px;
+          cursor: pointer;
+          box-shadow: 0px 4px 4px $partialblack2;
+          transition: all 0.25s ease-out;
+
+          .box_img {
+            fill: $white;
+            width: 40%;
+            transition: all 0.25s ease-out;
+          }
+        }
+
+        .desc {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          .desc_title {
+            color: $grey4;
+            font-weight: 500;
+            margin-bottom: 10px;
+            width: 150%;
+            cursor: default;
+            transition: all 0.25s ease-out;
+          }
+
+          > p {
+            margin: 0;
+            font-size: 125%;
+            color: $grey3;
+          }
+        }
+      }
+    }
+  }

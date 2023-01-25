@@ -1,0 +1,102 @@
+@use '../../styles/variables/colors' as *;
+@import '../../styles/mixins';
+
+.input_field {
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  column-gap: 0px !important;
+  margin-bottom: 10px;
+}
+
+.input {
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  column-gap: 0px !important;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.messageText {
+  font-size: 30px;
+  color: $red2;
+}
+
+.notifications_Button {
+  display: flex;
+  flex-direction: column;
+}
+
+.textfieldentermessage {
+  height: 200px;
+  width: 100%;
+}
+
+.container {
+  padding-bottom: 50px;
+
+  @include mdBreakPoint {
+    padding-bottom: 75px;
+  }
+
+  .element_container {
+    margin: 0% 0% 10% 0% !important;
+  }
+}
+
+.notifications_Button > button {
+  border: 1px solid $red2 !important;
+  border-radius: 5px !important;
+  background-color: $white;
+  min-width: 15vw;
+  height: 50px;
+  margin-bottom: 20px;
+  color: $black;
+}
+
+.notifications_alerts_container {
+  padding: 1.5px;
+  border-radius: 4px;
+  background: $red1;
+}
+
+.notifications_alerts_container:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.notifications_alerts_container:hover {
+  background: none;
+}
+
+.notifications_alerts {
+  background: $white;
+  cursor: pointer;
+  color: $black2;
+}
+
+.notifications_alerts:hover {
+  background: $red1;
+  color: $white;
+}
+
+.notifications_parent_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.text-area {
+  padding-top: 10px;
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+}
+
+.sendButton > button {
+  min-width: 20vw;
+  background-color: $red2;
+}

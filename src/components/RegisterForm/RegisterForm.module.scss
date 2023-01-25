@@ -1,0 +1,204 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .MuiTextField-root {
+  width: 100%;
+}
+
+:global .MuiOutlinedInput-root {
+  background-color: $white;
+}
+
+:global .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+  padding-top: 17px;
+}
+
+.box_form {
+  margin: 5%;
+
+  @include xsBreakPoint {
+    margin: 4%;
+  }
+
+  @include mdBreakPoint {
+    margin: 2%;
+  }
+}
+
+.box_top_wrapper {
+  padding-bottom: 12px;
+
+  @include lgBreakPoint {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.box_creating_wrapper {
+  max-width: 100%;
+  flex-basis: 100%;
+  padding-bottom: 12px;
+
+  @include lgBreakPoint {
+    flex-basis: 54%;
+    padding-bottom: 0px;
+  }
+
+  @include xlBreakPoint {
+    flex-basis: 44%;
+  }
+}
+
+.box_creating_for {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_groom_name {
+  display: flex;
+  flex-direction: row;
+}
+
+.button_register {
+  height: 56px;
+  background-color: $red1;
+  width: 100%;
+
+  &:hover {
+    background-color: $red1;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.box_gender_wrapper {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-grow: 1;
+
+  @include lgBreakPoint {
+    justify-content: start;
+  }
+
+  .input_gender_label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black2;
+  }
+
+  .button_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .button_icon {
+      width: 143px;
+      height: 54px;
+      border: 1px solid $grey;
+      border-radius: 10px;
+    }
+
+    .button_label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $red1;
+    }
+  }
+
+  @include lgBreakPoint {
+    justify-content: flex-end;
+    flex-basis: 60%;
+    flex-wrap: nowrap;
+  }
+
+  @include xxlBreakPoint {
+    flex-basis: 50%;
+  }
+}
+
+.box_postal_code {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box_phone_number {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .phn_box input {
+    height: 56px;
+    width: 100%;
+  }
+}
+
+.box_email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box_password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box_reenter_password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box_date_of_birth_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .date_of_birth_label {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black2;
+  }
+
+  .date_picker {
+    margin-top: 1%;
+    width: 100%;
+
+    @include lgBreakPoint {
+      width: 80%;
+      margin-top: 0%;
+    }
+  }
+}
+
+.terms_and_condition_note {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.error {
+  display: flex;
+  font-weight: bold;
+  color: $red6;
+  flex-flow: row nowrap;
+  justify-content: center;
+}

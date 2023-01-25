@@ -1,0 +1,101 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box_form {
+  display: flex;
+  gap: 1%;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  flex-direction: row;
+  justify-content: center;
+
+  .logo_container {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    height: 50px;
+    padding-left: 8%;
+
+    .box_logo {
+      .logo {
+        height: 80%;
+        max-height: 50px;
+      }
+    }
+  }
+}
+
+.box_info {
+  display: none;
+  gap: 1%;
+  flex: 3;
+  justify-content: center;
+
+  @include lgBreakPoint {
+    display: flex;
+  }
+}
+
+.box_username,
+.box_password {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_username label,
+.box_password label {
+  font-size: 1.1rem;
+  top: -1.5px;
+}
+
+.box_password a {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin: 2.5px 5px;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 90%;
+}
+
+.box_button_wrapper {
+  width: 20%;
+
+  .button_login {
+    height: 40px;
+    background-color: $red1;
+    width: 100%;
+
+    &:hover {
+      background-color: $red1;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
+}
+
+.menu_wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8%;
+
+  @include lgBreakPoint {
+    display: none !important;
+  }
+}
+
+.menu_wrapper svg {
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  fill: $red1;
+
+  @include smBreakPoint {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}

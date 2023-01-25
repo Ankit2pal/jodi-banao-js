@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  word-break: break-word;
+  overflow-x: hidden;
+
+  @media (min-width: 576px) {
+    text-align: justify;
+  }
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.scrll {
+  position: fixed;
+  top: 80%;
+  right: 2%;
+  border: 1px solid #999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .scrll_icon {
+    fill: #536162;
+    height: 75%;
+    width: 75%;
+  }
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.dashColor {
+  background-color: #f5f5f5;
+}
+.mr-10 {
+  margin-bottom: 10px;
+}

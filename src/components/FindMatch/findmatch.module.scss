@@ -1,0 +1,121 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.findmatch-header {
+  margin-top: 50px;
+  text-align: center;
+
+  .terminal {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150%;
+    line-height: 36px;
+  }
+
+  .sucstory {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 375%;
+    line-height: 60px;
+    color: $red1;
+  }
+}
+
+.grid_container {
+  margin-bottom: 50px;
+
+  .card {
+    background: $white;
+    border: 0.5px solid $grey;
+    box-shadow: 0px 7px 6px -1px $partialblack;
+    border-radius: 30px;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $black2;
+    text-align: left;
+
+    .story-profile {
+      width: 100%;
+      border-radius: 42px;
+      padding: 10%;
+    }
+
+    .user-Dtils {
+      text-align: justify;
+      padding: 0% 5%;
+
+      @include mdBreakPoint {
+        text-align: left;
+      }
+
+      @include xlBreakPoint {
+        font-size: 90%;
+        line-height: initial;
+      }
+
+      .username {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 24px;
+        color: $black2;
+        margin: 0;
+        padding: 0px 0px 15px 0px;
+      }
+
+      .designation {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: $black2;
+        border-bottom: 2px solid $black2;
+      }
+
+      .userdisp {
+        @include mdBreakPoint {
+          padding-left: 10px;
+          padding-top: 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.grid_container > div:first-child > button,
+.grid_container > div:first-child > button:hover:enabled,
+.grid_container > div:first-child > button:focus:enabled {
+  background-color: $red2;
+  color: $white;
+}
+
+.details_container {
+  padding: 5% 0%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include mdBreakPoint {
+    height: 350px;
+    max-height: 350px;
+  }
+}
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}

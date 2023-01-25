@@ -1,0 +1,28 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.container-box {
+  width: 100%;
+
+  .login-form {
+    padding: 10px;
+
+    .email {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .btn-section {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      @include xsBreakPoint {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

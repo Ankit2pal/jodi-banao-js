@@ -1,0 +1,141 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.main_footer {
+  font-family: 'Poppins', sans-serif;
+  background: url(../../images/footer_banner.jpg) no-repeat center;
+  background-size: cover;
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $partialblack3;
+    padding: 80px 8%;
+
+    .grid_container {
+      justify-content: space-between;
+      flex-direction: column;
+
+      @include lgBreakPoint {
+        flex-direction: row;
+      }
+
+      .footer_nav {
+        max-width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+        cursor: default;
+
+        @include lgBreakPoint {
+          text-align: left;
+        }
+
+        .contact_info_head {
+          font-weight: 500;
+          font-size: 18px;
+          color: $white;
+          margin: 0;
+          margin-bottom: 10px;
+          text-align: center;
+
+          @include lgBreakPoint {
+            text-align: left;
+          }
+        }
+
+        .contact_info {
+          margin-bottom: 0px;
+          margin-top: 0px;
+          font-size: 15px;
+          color: $white;
+          text-align: center;
+
+          @include lgBreakPoint {
+            text-align: justify;
+          }
+
+          .contact_txt {
+            display: inline;
+            margin-left: 5px;
+          }
+
+          &.content_sz {
+            text-align: justify;
+          }
+        }
+      }
+    }
+
+    .contact_info a {
+      cursor: pointer;
+    }
+
+    .mediaIcon {
+      justify-content: center;
+      column-gap: 2%;
+
+      @include lgBreakPoint {
+        justify-content: flex-start;
+      }
+
+      .socialIcons {
+        display: flex;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &.fbicon {
+          background: $black;
+        }
+
+        &.twiter_img {
+          background: $black;
+        }
+
+        &.insta {
+          background: $white;
+        }
+      }
+    }
+
+    .center_Border {
+      border-bottom: 2px solid $partialwhite3;
+      margin-top: 60px;
+    }
+
+    .footer_logo {
+      background: url('../../images/logo_white_v2.png') no-repeat;
+      padding: 20%;
+      background-position: center;
+      background-size: 60%;
+    }
+
+    .copyright {
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      color: $white;
+      line-height: 32px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.phn_box {
+  display: flex;
+
+  .apple_icon {
+    height: 33px;
+  }
+
+  .play_icon {
+    height: 50px;
+    margin-top: -9px;
+  }
+}

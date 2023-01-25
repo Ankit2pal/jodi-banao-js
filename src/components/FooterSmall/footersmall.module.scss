@@ -1,0 +1,71 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.main_footer {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+
+  .bottom_line {
+    background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 0;
+    background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+
+    .grid_container {
+      align-items: center;
+      justify-content: center;
+      padding: 0% 2%;
+      color: $white;
+
+      @include xlBreakPoint {
+        padding: 0% 5%;
+      }
+
+      @include xxlBreakPoint {
+        padding: 0% 10%;
+      }
+
+      .cntct-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+
+        @include smBreakPoint {
+          flex-direction: row;
+        }
+
+        @include xlBreakPoint {
+          justify-content: flex-start;
+        }
+
+        .contact_info {
+          cursor: pointer;
+          margin-right: 2.5%;
+
+          @include xlBreakPoint {
+            margin-right: 2%;
+          }
+        }
+      }
+
+      .copyright {
+        padding: 2% 0%;
+        text-align: center;
+        cursor: default;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.cntct-bx,
+.copyright {
+  flex-grow: 1;
+}

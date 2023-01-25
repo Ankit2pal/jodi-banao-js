@@ -1,0 +1,45 @@
+@import '../../styles/variables/colors';
+
+.profile_header {
+  height: 100px;
+  background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header_txt {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  color: $white;
+}
+
+.accordion_container {
+  padding: 50px;
+}
+
+.profile_accordion {
+  box-sizing: border-box;
+  background: linear-gradient(90deg, $red3 0%, $yellow3 103.01%);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.accordion_title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: $white;
+}
+
+.accordion_details {
+  background-color: $white;
+  border-bottom: 1px solid $prflborder;
+  border-radius: 10px;
+}

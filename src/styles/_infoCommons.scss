@@ -1,0 +1,49 @@
+@use './variables/colors' as *;
+@import './mixins';
+
+.info-container {
+  padding-bottom: 50px;
+
+  @include lgBreakPoint {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+.theme-red {
+  font-size: 14;
+  .table-head {
+    th {
+      background-color: $red1;
+      color: $white;
+      font-weight: 500;
+      padding: 10px;
+    }
+    .sub-header {
+      th {
+        background-color: $white3 !important;
+        color: $red1 !important;
+        border: 1px solid $grey2;
+        border-top: 0;
+        &:nth-of-type(even) {
+          border-left: 0;
+        }
+      }
+    }
+  }
+
+  .table-body {
+    td {
+      background-color: $white3;
+      border: 1px solid $grey2;
+      border-top: 0;
+      padding: 8px;
+      &:nth-of-type(even) {
+        border-left: 0;
+      }
+      &:nth-of-type(3) {
+        border-left: 0;
+      }
+    }
+  }
+}

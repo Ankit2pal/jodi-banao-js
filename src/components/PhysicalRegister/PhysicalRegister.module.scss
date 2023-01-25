@@ -1,0 +1,189 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .MuiInputLabel-root.Mui-focused,
+:global .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  font-weight: 500;
+  padding: 0% 2%;
+  margin-left: -1.5%;
+  background: $partialwhite2;
+  border-radius: 5px;
+}
+
+.tab-panal-blk > div {
+  padding: 5px;
+
+  @include mdBreakPoint {
+    padding: 20px;
+  }
+}
+
+.fb-block {
+  .phy-reg-main {
+    display: grid;
+
+    @include lgBreakPoint {
+      grid-template-columns: 0.6fr 0.4fr;
+    }
+  }
+
+  .cuple-img {
+    display: none;
+
+    @include lgBreakPoint {
+      display: block;
+      background: url(../../images/tenderbg.jpg) no-repeat;
+      background-size: 40%;
+      background-position: right;
+      background-attachment: fixed;
+    }
+  }
+
+  .box_form {
+    width: 90%;
+    min-height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 2.5% 5%;
+    border: 1px solid $white;
+    border-radius: 30px;
+
+    @include lgBreakPoint {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .proInf-bg {
+    background-color: $white;
+    padding: 1px;
+    border-radius: 5px;
+  }
+
+  .btn-hldr {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0px 25px 0px;
+    gap: 10px;
+
+    .dot-prv-btn {
+      flex-grow: 1;
+      .prv-btn {
+        background-color: $red1;
+        border: solid 1px;
+        width: 100%;
+
+        @include xxsBreakPoint {
+          width: 80%;
+        }
+
+        @include xsBreakPoint {
+          width: 60%;
+        }
+      }
+    }
+
+    .dot-nxt-btn {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      .nxt-btn {
+        background-color: $yellow;
+        width: 100%;
+
+        @include xsBreakPoint {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .text-hed:first-child {
+    margin-top: 25px;
+  }
+
+  .text-hed {
+    margin-top: 50px;
+    font-size: 125%;
+    color: $yellow;
+
+    @include xsBreakPoint {
+      font-size: 130%;
+    }
+  }
+
+  .phy-reg-bk {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    background: url(../../images/stepsBackground.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .phy-tab-bk {
+      margin: 25px 5%;
+      word-break: break-word;
+
+      div {
+        div {
+          align-items: flex-start;
+        }
+      }
+
+      .prosnl-info {
+        display: none;
+        color: $white;
+        flex: 1;
+
+        @include xsBreakPoint {
+          display: flex;
+        }
+      }
+
+      .prosnl-info-active {
+        display: flex;
+        flex: 1;
+        color: $yellow;
+      }
+
+      .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-icon,
+      .navbar-icon-active {
+        width: 35px;
+        height: 35px;
+        padding: 3px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-icon {
+        background-color: $white;
+      }
+
+      .navbar-icon-active {
+        background-color: $yellow;
+      }
+
+      .navbar-icon > svg > path {
+        fill: $yellow;
+      }
+
+      .navbar-icon-active > svg > path {
+        fill: $white;
+      }
+
+      .navbar-item {
+        margin-top: 10px;
+      }
+    }
+  }
+}

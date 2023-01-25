@@ -1,0 +1,45 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box-container {
+  width: 80%;
+  margin: 5% auto;
+  background: $white;
+  border: 0.5px solid $grey;
+  box-shadow: 0px 7px 6px -1px $partialblack;
+  border-radius: 10px;
+  padding: 22.5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+
+  @include smBreakPoint {
+    width: 50%;
+    padding: 45px;
+  }
+
+  .box-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .otp {
+      width: 100%;
+    }
+  }
+
+  .button_forgotpwd {
+    height: 56px;
+    background-color: $red1;
+    width: 100%;
+
+    &:hover {
+      background-color: $red1;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
+}

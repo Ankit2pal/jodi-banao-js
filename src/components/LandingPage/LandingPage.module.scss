@@ -1,0 +1,56 @@
+@import '../../styles/variables/colors';
+
+.box_container {
+  height: 160px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.box_logo {
+  margin: 50px 11%;
+}
+
+.box_form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  :global .MuiTextField-root {
+    height: 72px;
+  }
+}
+
+.box_username {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 20px 45px 0px;
+  width: 17%;
+}
+
+.box_password {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 20px 21px 0px;
+  width: 17%;
+}
+
+.box_button_wrapper {
+  display: flex;
+  height: 72px;
+  margin: 45px 20px 45px 0px;
+  width: 11%;
+}
+
+.button_login {
+  height: 56px;
+  background-color: $red1;
+  width: 100%;
+
+  &:hover {
+    background-color: $red1;
+  }
+  span {
+    font-size: 18px;
+  }
+}

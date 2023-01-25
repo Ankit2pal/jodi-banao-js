@@ -1,0 +1,38 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.genderSelectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .genderSelectBtn {
+    width: 115px;
+    max-width: 100%;
+    background: $white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include xxsBreakPoint {
+      width: 143px;
+    }
+  }
+
+  .genderSelectBtn:nth-child(1) {
+    border-radius: 10px;
+    height: 55px;
+  }
+
+  .genderSelectBtn:nth-child(2) {
+    border-left: 1px solid;
+    border-radius: 10px;
+    height: 55px;
+  }
+
+  @include mdBreakPoint {
+    flex-wrap: nowrap;
+  }
+}

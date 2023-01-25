@@ -1,0 +1,76 @@
+@use '../../styles/variables/colors' as *;
+@import '../../styles/mixins';
+
+
+.container {
+  padding-bottom: 50px;
+  margin-top: 40px;
+
+  @include mdBreakPoint {
+    padding-bottom: 75px;
+  }
+  .input {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .input_field {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    // margin-bottom: 10px;
+  }
+  .input_grid {
+position: relative;
+  }
+
+  .card {
+    height: 80%;
+    border: 1px solid #F14046
+  }
+  .card_content{
+    display: flex;
+    padding: 0;
+    height: 100%;
+  }
+  .grid_intial{
+    background-color: #F14046;
+    width: 25%;
+    text-align: center;
+    padding-top: 42px;
+    color: white;
+  }
+  .text_grid{
+    padding-top: 10px;
+  }
+.package_type{
+  border: #F14046;
+  background-color: #F14046;
+  width: 40%;
+  color:white;
+}
+  .textfieldentermessage {
+    height: 200px;
+    width: 100%;
+  }
+  .list {
+    width: 100%;
+    max-width: 360;
+    margin-top: 8px;
+  }
+  .profile {
+    min-width: 30px;
+    color: $black;
+  }
+
+  .btn_container {
+    text-align: center;
+    padding-top: 10px;
+
+    .submit_btn {
+      background-color: $red1;
+    }
+  }
+}

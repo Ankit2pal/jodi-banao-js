@@ -1,0 +1,21 @@
+export const STEPS_LABELS = {
+  familyType: 'Family Type',
+  familyStatus: 'Family Status',
+  fatherSurname: `Father's Surname`,
+  fatherName: 'Father Name',
+  fatherOccupation: 'Father Occupation',
+  motherSurname: `Mother's Surname`,
+  motherName: 'Mother Name',
+  motherOccupation: 'Mother Occupation',
+  noOfBrothers: 'No. of Brothers',
+  noOfSisters: 'No. of Sisters',
+  star: 'Star',
+  highestEducation: 'Highest Education',
+  employmentType: 'Employment Type',
+  annualIncome: 'Annual Income',
+  occupation: 'Occupation',
+  address: 'Address',
+  own: 'Own',
+  typeOfAddress: 'Type Of Address',
+  fillForm: 'Please fill information first'
+};

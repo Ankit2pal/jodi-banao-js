@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+
+.table_container {
+  overflow-x: auto;
+  max-width: 92.75vw;
+  width: 100%;
+
+  @include mdBreakPoint {
+    max-width: inherit;
+    width: auto;
+  }
+}

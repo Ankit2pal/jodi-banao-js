@@ -1,0 +1,37 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box_container {
+  padding: 25% 0% 25% 0%;
+
+  @include xsBreakPoint {
+    padding: 0% 25% 10% 25%;
+  }
+
+  .box_form_container {
+    padding: 0% 2%;
+
+    @include mdBreakPoint {
+      padding: 3% 25%;
+    }
+  }
+
+  .box_deact_type,
+  .box_deact_reason {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .button_submit {
+    width: auto;
+    background-color: $red1;
+
+    @include xsBreakPoint {
+      width: 60%;
+    }
+  }
+}

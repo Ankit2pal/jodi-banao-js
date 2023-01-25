@@ -1,0 +1,33 @@
+@use '../../styles/variables/colors' as *;
+@import '../../styles/mixins';
+
+.container {
+  padding-bottom: 50px;
+  margin-top: 40px;
+  .input_field {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    margin-bottom: 10px;
+  }
+  .input {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  @include mdBreakPoint {
+    padding-bottom: 75px;
+  }
+
+  .btn_container {
+    text-align: center;
+    padding-top: 10px;
+
+    .submit_btn {
+      background-color: $red1;
+    }
+  }
+}

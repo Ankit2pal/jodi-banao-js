@@ -1,0 +1,117 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .css-1ygcj2i-MuiTableCell-root,
+:global .css-1ex1afd-MuiTableCell-root {
+  padding: 16px 5px;
+
+  @include smBreakPoint {
+    padding: 16px 0px;
+  }
+
+  @include lgBreakPoint {
+    padding: 16px;
+  }
+}
+
+:global .css-1ex1afd-MuiTableCell-root > div > button {
+  padding: 0;
+  min-width: max-content;
+  margin-right: 10px;
+  justify-content: flex-start;
+}
+
+:global .css-1ex1afd-MuiTableCell-root > div > button:hover {
+  background-color: transparent;
+}
+
+:global .css-11mde6h-MuiPaper-root {
+  min-width: 750px;
+}
+
+.container {
+  padding-bottom: 10%;
+  display: block;
+
+  @include xsBreakPoint {
+    padding-bottom: 5%;
+  }
+
+  .add_button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+    .add_button {
+      background-color: $red1;
+      color: $white;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+  }
+}
+
+.image {
+  display: flex;
+  padding-left: 50vw;
+}
+
+.rotate {
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.error {
+  color: $red6;
+}
+
+.model-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: $white;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%),
+    0px 9px 46px 8px rgb(0 0 0 / 12%);
+
+  @include mdBreakPoint {
+    width: 40vw;
+  }
+
+  .add_title {
+    display: flex;
+    background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    color: $white;
+  }
+
+  .form_container {
+    margin: 0px 25px;
+
+    .save_button_container {
+      display: flex;
+      justify-content: center;
+
+      .save_button {
+        color: $white;
+        background-color: $red1;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+.form_container > * {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,132 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.banner_container {
+  display: flex;
+  background-image: url(../../images/banner_v2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  box-shadow: 0px 2px 5px $black;
+
+  .register_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-right: 8%;
+    margin-left: 8%;
+    width: 100% !important;
+
+    @include mdBreakPoint {
+      width: 65%;
+      margin-top: 75px;
+    }
+
+    @include lgBreakPoint {
+      margin: 0% 8%;
+    }
+
+    .join_text {
+      font-size: 200%;
+      color: $white;
+      text-align: center;
+      font-family: 'Playfair Display';
+      text-shadow: 0px 2px 5px $partialblack2;
+      cursor: default;
+
+      @include lgBreakPoint {
+        font-size: 250%;
+        margin-top: 70px;
+      }
+
+      @include xlBreakPoint {
+        margin-top: 0px;
+      }
+    }
+
+    .danger {
+      color: $red4;
+      font-size: 0.75rem;
+      font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      text-align: left;
+      margin-top: 3px;
+      margin-right: 14px;
+      margin-bottom: 0;
+      margin-left: 14px;
+    }
+
+    .register_box {
+      display: flex;
+      align-items: center;
+      min-height: 100px;
+      background-color: $partialwhite3;
+      border-radius: 5px;
+
+      .register_form {
+        width: 100%;
+        justify-content: space-evenly;
+
+        .label_container {
+          display: flex;
+          flex-direction: column;
+          color: $grey4;
+          font-size: 15px;
+
+          .label {
+            cursor: default;
+          }
+
+          .text_field {
+            border-radius: 4px;
+            width: 100%;
+
+            input {
+              width: 100% !important;
+              height: 40px;
+              border-radius: 4px;
+            }
+          }
+          .text_field_phone {
+            border-radius: 4px;
+            width: 100%;
+
+            input {
+              width: 100% !important;
+              height: 56px;
+              border-radius: 4px;
+            }
+          }
+
+          .submit {
+            margin-top: 23.2px;
+            border-radius: 5px;
+            height: 53px;
+            color: $white;
+            background-color: $yellow4;
+            box-shadow: 0px 4px 4px $partialblack2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.label_container:nth-child(3) > div > div {
+  border-radius: 4px 0 0 4px;
+}
+
+.label_container:nth-child(3):hover > div > input {
+  border: 1px solid $black;
+}
+
+.label_container:nth-child(3):hover > div > div {
+  border-left: 1px solid $black;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+}

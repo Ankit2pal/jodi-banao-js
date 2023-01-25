@@ -1,0 +1,11 @@
+@import '../../styles/variables/colors';
+
+.italic {
+  font-style: italic;
+  color: $black;
+}
+
+.bold {
+  font-weight: bold;
+  color: $black;
+}

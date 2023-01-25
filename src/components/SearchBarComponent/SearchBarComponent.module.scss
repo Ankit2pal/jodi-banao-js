@@ -1,0 +1,80 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .MuiAutocomplete-root {
+  width: 100%;
+}
+
+.box_container {
+  display: flex;
+  width: 100%;
+
+  @include lgBreakPoint {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  background-image: linear-gradient(to right, $red2, $yellow2);
+}
+
+.box_form_container {
+  display: flex;
+  width: 100%;
+  margin: 40px 10%;
+  justify-content: center;
+  flex-direction: column;
+
+  @include lgBreakPoint {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.box_abroad {
+  color: white;
+  font-size: 13px;
+  @include lgBreakPoint {
+    display: grid;
+  }
+}
+.box_abroad2 {
+  color: white;
+  font-size: 13px;
+  width: 10%;
+  @include lgBreakPoint {
+    display: grid;
+  }
+}
+
+.box_field_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+
+  @include lgBreakPoint {
+    width: 17%;
+    margin-bottom: 0%;
+  }
+}
+
+.box_button_container {
+  display: flex;
+  width: 100%;
+  height: 37px;
+
+  @include lgBreakPoint {
+    width: 17%;
+  }
+}
+
+.box_button {
+  background-color: $white;
+  text-transform: none;
+  color: $black;
+  font-weight: normal;
+  width: 100%;
+  padding: 1%;
+  &:hover {
+    background-color: $white;
+  }
+}

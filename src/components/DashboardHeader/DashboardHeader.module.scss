@@ -1,0 +1,59 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.topHead {
+  height: 15px;
+  background: linear-gradient(90.05deg, $red2 -3.72%, $yellow2 120.3%);
+  align-items: center;
+}
+
+.box_logo {
+  background: url(../../images/logo_v2.png) no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 100%;
+}
+
+:global .css-1t6c9ts {
+  justify-content: flex-end;
+  margin-right: 0% 10%;
+  margin-left: 3%;
+  padding: 0px 4px;
+}
+
+.header-color {
+  color: #727171;
+}
+
+.profile-color {
+  color: #727171;
+  width: 30px;
+  height: 33px;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 50%;
+  min-width: 53px;
+}
+
+:global .css-2uchni {
+  margin-right: 0% 10%;
+  margin-left: 3%;
+}
+.upgrade-color {
+  color: #f14046;
+  padding: 0px 34px;
+}
+
+.upgrade-color2 {
+  margin-left: 25px;
+}
+@media (max-width: 899px) {
+  .upgrade-color {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .upgrade-color2 {
+    display: none;
+  }
+}

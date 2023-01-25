@@ -1,0 +1,37 @@
+@use '../../styles/variables/colors' as *;
+@import '../../styles/mixins';
+
+.phn_box input {
+  height: 56px !important;
+  width: 100% !important;
+}
+.danger {
+  color: red;
+  font-size: 10px;
+}
+.danger {
+  color: red;
+  font-size: 10px;
+}
+.container {
+  padding-bottom: 50px;
+  margin-top: 40px;
+
+  @include mdBreakPoint {
+    padding-bottom: 75px;
+  }
+
+  .radio_container {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .btn_container {
+    text-align: center;
+    padding-top: 10px;
+
+    .submit_btn {
+      background-color: $red1;
+    }
+  }
+}

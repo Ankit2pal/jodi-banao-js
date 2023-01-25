@@ -1,0 +1,160 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .eAyARa:disabled,
+:global .eAyARa:disabled:hover {
+  background-color: $white3 !important;
+  color: $grey !important;
+}
+
+:global .rec-item-wrapper {
+  height: 100% !important;
+}
+
+:global .rec-dot {
+  background-color: transparent !important;
+  border: 1px solid $yellow4 !important;
+  box-shadow: none !important;
+}
+
+:global .rec-dot_active {
+  background-color: $yellow4 !important;
+  border: 1px solid transparent !important;
+}
+
+.subtitle {
+  color: $red1;
+  font-size: 110%;
+  margin-bottom: 50px;
+}
+.name {
+  color: #1976d2;
+}
+.container {
+  @include lgBreakPoint {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .figContainer {
+    flex-direction: column;
+    align-items: center;
+
+    @include mdBreakPoint {
+      min-height: 50vh;
+      flex-direction: row;
+    }
+
+    .boxContainer {
+      height: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @include xxsBreakPoint {
+        flex-direction: row;
+      }
+
+      @include mdBreakPoint {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 10px;
+  color: $white;
+  text-align: center;
+  padding: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-height: 15vh;
+  width: 100%;
+
+  @include xsBreakPoint {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include lgBreakPoint {
+    min-height: 23.75vh;
+  }
+}
+
+.box1 {
+  background-color: $yellow2;
+}
+
+.box2 {
+  background-color: $red1;
+}
+
+.count {
+  font-size: 200%;
+}
+
+.title {
+  font-size: 125%;
+  line-height: 25px;
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white2;
+  border: 1px solid $grey2;
+  border-radius: 10px;
+  padding: 0;
+  min-height: 50vh;
+  width: 100%;
+
+  @include xxsBreakPoint {
+    padding: 25px;
+  }
+}
+
+.chart > canvas {
+  width: 100% !important;
+}
+
+.profileContainer {
+  margin-top: 30px;
+  padding: 0;
+
+  .buttonContainer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @include xxsBreakPoint {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.button {
+  color: $red1;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.profiles {
+  width: 90%;
+}
+
+.carousel_wrapper {
+  margin-top: 25px;
+}
+
+.carousel_breakPoints > div:first-child > button,
+.carousel_breakPoints > div:first-child > button:hover:enabled,
+.carousel_breakPoints > div:first-child > button:focus:enabled {
+  background-color: $red2;
+  color: $white;
+}

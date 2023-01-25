@@ -1,0 +1,20 @@
+@use '../../styles/variables/colors' as *;
+
+.view-profile-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-table {
+  margin-top: 1em;
+}
+
+.user-img {
+  width: 180px;
+  margin-top: 1em;
+}
+
+.icon {
+  color: $red1;
+  margin-right: 15px;
+}

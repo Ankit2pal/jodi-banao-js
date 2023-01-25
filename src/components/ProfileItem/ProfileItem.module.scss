@@ -1,0 +1,85 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.box_img_profile {
+  width: 100%;
+  background-color: $white;
+  height: auto;
+  object-fit: contain;
+
+  @include mdBreakPoint {
+    width: auto;
+    height: 200px;
+  }
+}
+
+.box_container_profile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grey2;
+  border-radius: 10px;
+  background: $white3;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box_details_container {
+  flex: 1;
+}
+
+.box_details_container > p:not(:first-child) {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 1%;
+
+  @include xlBreakPoint {
+    gap: 2%;
+  }
+}
+
+.p_username {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black2;
+  text-align: center;
+  margin: 20px 0px 12px 0px;
+}
+
+.p_other_details {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $black2;
+  margin: 0px 0px 7px 0px;
+  text-align: center;
+}
+
+.p_other_details > svg {
+  fill: $red1;
+}
+
+.box_button_container {
+  display: flex;
+  width: 100%;
+  margin: 25px 0px 32px 0px;
+  justify-content: center;
+}
+
+.button_view_profile {
+  text-transform: none;
+  background: $white;
+  border: 1px solid $red1;
+  border-radius: 10px;
+  color: $red1;
+
+  &:hover {
+    background: $red1;
+    color: $white;
+  }
+}

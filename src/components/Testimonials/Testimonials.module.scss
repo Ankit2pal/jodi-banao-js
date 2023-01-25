@@ -1,0 +1,144 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+:global .hHJTFD {
+  margin: 0px !important;
+}
+
+.findmatch-header {
+  margin-top: 0px;
+  text-align: center;
+
+  .terminal {
+    font-weight: 400;
+    font-size: 24px;
+    color: $grey3;
+    margin: 0;
+  }
+
+  .sucstory {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 300%;
+    color: $yellow4;
+  }
+}
+
+.grid_container {
+  margin-bottom: 50px;
+
+  .card {
+    background: $white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    color: $black2;
+    text-align: left;
+
+    @include smBreakPoint {
+      font-size: 18px;
+    }
+
+    .story-profile {
+      width: 100%;
+      border-radius: 42px;
+      padding: 10%;
+    }
+
+    .user-Dtils {
+      text-align: justify;
+      padding: 0% 5%;
+
+      @include mdBreakPoint {
+        text-align: left;
+      }
+
+      @include xlBreakPoint {
+        font-size: 90%;
+        line-height: initial;
+      }
+
+      .username {
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 18px;
+        color: $grey4;
+        margin: 0;
+        padding: 0px 0px 15px 0px;
+
+        @include smBreakPoint {
+          font-size: 24px;
+        }
+      }
+
+      .designation {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: $grey3;
+
+        @include smBreakPoint {
+          font-size: 18px;
+        }
+      }
+
+      .userdisp {
+        color: $grey3;
+        text-align: justify;
+
+        @include mdBreakPoint {
+          padding-top: 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.details_container {
+  padding: 5% 0%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include mdBreakPoint {
+    height: 350px;
+    max-height: 350px;
+  }
+}
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.custom_btn {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+.custom_btn:hover {
+  background-color: transparent;
+}
+
+.custom_btn > svg {
+  height: 100%;
+  width: 100%;
+  color: $grey4;
+}
+
+.ph_container {
+  width: 200px;
+  max-width: 100%;
+}

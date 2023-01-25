@@ -1,0 +1,42 @@
+@use '../../styles/variables/colors' as *;
+@import '../../styles/mixins';
+
+.phn_box input {
+  height: 56px !important;
+  width: 100% !important;
+}
+
+.container {
+  padding-bottom: 50px;
+  margin-top: 40px;
+
+  @include mdBreakPoint {
+    padding-bottom: 75px;
+  }
+
+  .radio_container {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .input_field {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    margin-bottom: 10px;
+  }
+  .input {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    column-gap: 0px !important;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .btn_container {
+    text-align: center;
+    padding-top: 10px;
+
+    .submit_btn {
+      background-color: $red1;
+    }
+  }
+}
